@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/import.css">
+    <link rel="apple-touch-icon" href="images/meta/apple-touch-icon.png">
+    <!-- Start googlefont -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400;500;700&family=Open+Sans&family=Oswald:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- End googlefont -->
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <meta property="og:site_name" content="FUKUOKA DEV13 MEMBER" />
+    <meta property="og:url" content="URL" />
+    <meta property="og:type" content="website or article" />
+    <meta property="og:title" content="ページのタイトル" />
+    <meta property="og:description" content="ページの説明" />
+    <meta property="og:image" content="URL" />
+    <meta property="og:locale" content="ja_JP" />
+    <meta property="fb:app_id" content="AppID">
+    <meta name="twitter:card" content="summary_large_image or summary" />
+    <meta name="twitter:site" content="@twitter_id" />
+    <meta name="twitter:description" content="ページの説明" />
+    <meta name="twitter:image:src" content="URL" />
+    <script src="https://kit.fontawesome.com/39e5143346.js" crossorigin="anonymous"></script>
+    <title>FUKUOKA DEV13 MEMBER</title>
+</head>
+
+<body>
+    <script>
+        $(document).ready(function () {
+            const spinner = $("#loadeing");
+            $("spinner").attr('id', 'loaded');
+        });
+
+        $(window).on('load', function () {
+            const spinner = document.getElementById('loading');
+            spinner.classList.add('loaded')
+        });
+
+        // $(window).on('load', function () {
+        //     setTimeout(function () {
+        //         const spinner = document.getElementById('loading');
+        //         spinner.classList.add('loaded');
+        //     }, 1000);
+        // });
+    </script>
+    <!-- ローディング画面 -->
+    <div id="loading">
+        <div class="spinner"></div>
+    </div>
+    <!-- 背景のparticles -->
+    <div id="particles-js"></div>
+    <header>
+        <div class="header-item">
+            <p class=" site-id"><img src="./assets/images/logo.png" alt=""></p>
+            <h1>FUKUOKA DEV13 MEMBER</h1>
+            <p class="cacthcopy">福岡・山口・広島からセカイを変える、GEEKな仲間達。</p>
+        </div><!-- /.header-item -->
+        <!-- ハンバーガーメニュー部分 -->
+        <div class="drawer">
+            <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
+            <input type="checkbox" id="drawer-check" class="drawer-hidden">
+            <!-- ハンバーガーアイコン -->
+            <label for="drawer-check" class="drawer-open"><span></span></label>
+            <!-- メニュー -->
+            <nav class="drawer-content">
+                <ul class="drawer-list">
+                    <li class="drawer-item">
+                        <a href="/contact.html">メンバーにメッセージを送る</a>
+                    </li><!-- /.drawer-item -->
+                    <li class="drawer-item">
+                        <a href="https://gsacademy.jp/" target="_blank">G’s ACADEMY</a>
+                    </li><!-- /.drawer-item -->
+                </ul><!-- /.drawer-list -->
+            </nav>
+        </div><!--/.drawer -->
+    </header>
+    <main>
+        <div id="all-member">
+            <article class="profile">
+                <section class="profile-ph">
+                    <img src="./assets/images/ph-tagawa.png" sizes="" alt="">
+                </section><!-- /.profile-ph -->
+                <section class="profile-txt">
+                    <h1>姓 名</h1>
+                    <p class="member-name-roman">SEI MEI</p>
+                    <ul>
+                        <li><a href=""><i class="fab fa-facebook sns-icon-color"></i></a></li>
+                        <li><a href=""><i class=" fa-brands fa-twitter sns-icon-color"></i></a></li>
+                    </ul>
+                    <h2>成し遂げたいこと</h2>
+                    <p class="achieve-txt">文章掲載文章掲載文章掲載文章掲載文章掲載文章掲載文章掲載</p>
+                </section><!-- /.profile-txt -->
+            </article><!-- /.profile -->
+            <article class="profile">
+                <section class="profile-ph">
+                    <img src="./assets/images/ph.png" sizes="" alt="">
+                </section><!-- /.profile-ph -->
+                <section class="profile-txt">
+                    <h1>姓 名</h1>
+                    <p class="member-name-roman">SEI MEI</p>
+                    <ul>
+                        <li><a href=""><i class="fab fa-facebook sns-icon-color"></i></a></li>
+                        <li><a href=""><i class=" fa-brands fa-twitter sns-icon-color"></i></a></li>
+                    </ul>
+                    <h2>成し遂げたいこと</h2>
+                    <p class="achieve-txt">文章掲載文章掲載文章掲載文章掲載文章掲載文章掲載文章掲載</p>
+                </section><!-- /.profile-txt -->
+            </article><!-- /.profile -->
+            <article class="profile">
+                <section class="profile-ph">
+                    <img src="./assets/images/ph-teshima.png" sizes="" alt="">
+                </section><!-- /.profile-ph -->
+                <section class="profile-txt">
+                    <h1>姓 名</h1>
+                    <p class="member-name-roman">SEI MEI</p>
+                    <ul>
+                        <li><a href=""><i class="fab fa-facebook sns-icon-color"></i></a></li>
+                        <li><a href=""><i class=" fa-brands fa-twitter sns-icon-color"></i></a></li>
+                    </ul>
+                    <h2>成し遂げたいこと</h2>
+                    <p class="achieve-txt">文章掲載文章掲載文章掲載文章掲載文章掲載文章掲載文章掲載</p>
+                </section><!-- /.profile-txt -->
+            </article><!-- /.profile -->
+            <article class="profile">
+                <section class="profile-ph">
+                    <img src="./assets/images/ph-tomishita.png" sizes="" alt="">
+                </section><!-- /.profile-ph -->
+                <section class="profile-txt">
+                    <h1>姓 名</h1>
+                    <p class="member-name-roman">SEI MEI</p>
+                    <ul>
+                        <li><a href=""><i class="fab fa-facebook sns-icon-color"></i></a></li>
+                        <li><a href=""><i class=" fa-brands fa-twitter sns-icon-color"></i></a></li>
+                    </ul>
+                    <h2>成し遂げたいこと</h2>
+                    <p class="achieve-txt">文章掲載文章掲載文章掲載文章掲載文章掲載文章掲載文章掲載</p>
+                </section><!-- /.profile-txt -->
+            </article><!-- /.profile -->
+            <article class="profile">
+                <section class="profile-ph">
+                    <img src="./assets/images/ph-irie.png" sizes="" alt="">
+                </section><!-- /.profile-ph -->
+                <section class="profile-txt">
+                    <h1>姓 名</h1>
+                    <p class="member-name-roman">SEI MEI</p>
+                    <ul>
+                        <li><a href=""><i class="fab fa-facebook sns-icon-color"></i></a></li>
+                        <li><a href=""><i class=" fa-brands fa-twitter sns-icon-color"></i></a></li>
+                    </ul>
+                    <h2>成し遂げたいこと</h2>
+                    <p class="achieve-txt">文章掲載文章掲載文章掲載文章掲載文章掲載文章掲載文章掲載</p>
+                </section><!-- /.profile-txt -->
+            </article><!-- /.profile -->
+            <article class="profile">
+                <section class="profile-ph">
+                    <img src="./assets/images/ph-kadota.png" sizes="" alt="">
+                </section><!-- /.profile-ph -->
+                <section class="profile-txt">
+                    <h1>姓 名</h1>
+                    <p class="member-name-roman">SEI MEI</p>
+                    <ul>
+                        <li><a href=""><i class="fab fa-facebook sns-icon-color"></i></a></li>
+                        <li><a href=""><i class=" fa-brands fa-twitter sns-icon-color"></i></a></li>
+                    </ul>
+                    <h2>成し遂げたいこと</h2>
+                    <p class="achieve-txt">文章掲載文章掲載文章掲載文章掲載文章掲載文章掲載文章掲載</p>
+                </section><!-- /.profile-txt -->
+            </article><!-- /.profile -->
+            <article class="profile">
+                <section class="profile-ph">
+                    <img src="./assets/images/ph-nishida.png" sizes="" alt="">
+                </section><!-- /.profile-ph -->
+                <section class="profile-txt">
+                    <h1>姓 名</h1>
+                    <p class="member-name-roman">SEI MEI</p>
+                    <ul>
+                        <li><a href=""><i class="fab fa-facebook sns-icon-color"></i></a></li>
+                        <li><a href=""><i class=" fa-brands fa-twitter sns-icon-color"></i></a></li>
+                    </ul>
+                    <h2>成し遂げたいこと</h2>
+                    <p class="achieve-txt">文章掲載文章掲載文章掲載文章掲載文章掲載文章掲載文章掲載</p>
+                </section><!-- /.profile-txt -->
+            </article><!-- /.profile -->
+            <article class="profile">
+                <section class="profile-ph">
+                    <img src="./assets/images/ph-terada.png" sizes="" alt="">
+                </section><!-- /.profile-ph -->
+                <section class="profile-txt">
+                    <h1>姓 名</h1>
+                    <p class="member-name-roman">SEI MEI</p>
+                    <ul>
+                        <li><a href=""><i class="fab fa-facebook sns-icon-color"></i></a></li>
+                        <li><a href=""><i class=" fa-brands fa-twitter sns-icon-color"></i></a></li>
+                    </ul>
+                    <h2>成し遂げたいこと</h2>
+                    <p class="achieve-txt">文章掲載文章掲載文章掲載文章掲載文章掲載文章掲載文章掲載</p>
+                </section><!-- /.profile-txt -->
+            </article><!-- /.profile -->
+            <article class="profile">
+                <section class="profile-ph">
+                    <img src="./assets/images/ph-matushita.png" sizes="" alt="">
+                </section><!-- /.profile-ph -->
+                <section class="profile-txt">
+                    <h1>姓 名</h1>
+                    <p class="member-name-roman">SEI MEI</p>
+                    <ul>
+                        <li><a href=""><i class="fab fa-facebook sns-icon-color"></i></a></li>
+                        <li><a href=""><i class=" fa-brands fa-twitter sns-icon-color"></i></a></li>
+                    </ul>
+                    <h2>成し遂げたいこと</h2>
+                    <p class="achieve-txt">文章掲載文章掲載文章掲載文章掲載文章掲載文章掲載文章掲載</p>
+                </section><!-- /.profile-txt -->
+            </article><!-- /.profile -->
+            <article class="profile">
+                <section class="profile-ph">
+                    <img src="./assets/images/ph-fujita.png" sizes="" alt="">
+                </section><!-- /.profile-ph -->
+                <section class="profile-txt">
+                    <h1>姓 名</h1>
+                    <p class="member-name-roman">SEI MEI</p>
+                    <ul>
+                        <li><a href=""><i class="fab fa-facebook sns-icon-color"></i></a></li>
+                        <li><a href=""><i class=" fa-brands fa-twitter sns-icon-color"></i></a></li>
+                    </ul>
+                    <h2>成し遂げたいこと</h2>
+                    <p class="achieve-txt">文章掲載文章掲載文章掲載文章掲載文章掲載文章掲載文章掲載</p>
+                </section><!-- /.profile-txt -->
+            </article><!-- /.profile -->
+            <article class="profile">
+                <section class="profile-ph">
+                    <img src="./assets/images/ph-ishida.png" sizes="" alt="">
+                </section><!-- /.profile-ph -->
+                <section class="profile-txt">
+                    <h1>姓 名</h1>
+                    <p class="member-name-roman">SEI MEI</p>
+                    <ul>
+                        <li><a href=""><i class="fab fa-facebook sns-icon-color"></i></a></li>
+                        <li><a href=""><i class=" fa-brands fa-twitter sns-icon-color"></i></a></li>
+                    </ul>
+                    <h2>成し遂げたいこと</h2>
+                    <p class="achieve-txt">文章掲載文章掲載文章掲載文章掲載文章掲載文章掲載文章掲載</p>
+                </section><!-- /.profile-txt -->
+            </article><!-- /.profile -->
+            <article class="profile">
+                <section class="profile-ph">
+                    <img src="./assets/images/ph-yoshitake.png" sizes="" alt="">
+                </section><!-- /.profile-ph -->
+                <section class="profile-txt">
+                    <h1>姓 名</h1>
+                    <p class="member-name-roman">SEI MEI</p>
+                    <ul>
+                        <li><a href=""><i class="fab fa-facebook sns-icon-color"></i></a></li>
+                        <li><a href=""><i class=" fa-brands fa-twitter sns-icon-color"></i></a></li>
+                    </ul>
+                    <h2>成し遂げたいこと</h2>
+                    <p class="achieve-txt">文章掲載文章掲載文章掲載文章掲載文章掲載文章掲載文章掲載</p>
+                </section><!-- /.profile-txt -->
+            </article><!-- /.profile -->
+            <article class="profile">
+                <section class="profile-ph">
+                    <img src="./assets/images/ph-katuski.png" sizes="" alt="">
+                </section><!-- /.profile-ph -->
+                <section class="profile-txt">
+                    <h1>姓 名</h1>
+                    <p class="member-name-roman">SEI MEI</p>
+                    <ul>
+                        <li><a href=""><i class="fab fa-facebook sns-icon-color"></i></a></li>
+                        <li><a href=""><i class=" fa-brands fa-twitter sns-icon-color"></i></a></li>
+                    </ul>
+                    <h2>成し遂げたいこと</h2>
+                    <p class="achieve-txt">文章掲載文章掲載文章掲載文章掲載文章掲載文章掲載文章掲載</p>
+                </section><!-- /.profile-txt -->
+            </article><!-- /.profile -->
+            <article class="profile">
+                <section class="profile-ph">
+                    <img src="./assets/images/ph-sakai.png" sizes="" alt="">
+                </section><!-- /.profile-ph -->
+                <section class="profile-txt">
+                    <h1>姓 名</h1>
+                    <p class="member-name-roman">SEI MEI</p>
+                    <ul>
+                        <li><a href=""><i class="fab fa-facebook sns-icon-color"></i></a></li>
+                        <li><a href=""><i class=" fa-brands fa-twitter sns-icon-color"></i></a></li>
+                    </ul>
+                    <h2>成し遂げたいこと</h2>
+                    <p class="achieve-txt">文章掲載文章掲載文章掲載文章掲載文章掲載文章掲載文章掲載</p>
+                </section><!-- /.profile-txt -->
+            </article><!-- /.profile -->
+            <article class="profile">
+                <section class="profile-ph">
+                    <img src="./assets/images/ph-aoshima.png" sizes="" alt="">
+                </section><!-- /.profile-ph -->
+                <section class="profile-txt">
+                    <h1>姓 名</h1>
+                    <p class="member-name-roman">SEI MEI</p>
+                    <ul>
+                        <li><a href=""><i class="fab fa-facebook sns-icon-color"></i></a></li>
+                        <li><a href=""><i class=" fa-brands fa-twitter sns-icon-color"></i></a></li>
+                    </ul>
+                    <h2>成し遂げたいこと</h2>
+                    <p class="achieve-txt">文章掲載文章掲載文章掲載文章掲載文章掲載文章掲載文章掲載</p>
+                </section><!-- /.profile-txt -->
+            </article><!-- /.profile -->
+            <article class="profile">
+                <section class="profile-ph">
+                    <img src="./assets/images/ph-isobata.png" sizes="" alt="">
+                </section><!-- /.profile-ph -->
+                <section class="profile-txt">
+                    <h1>姓 名</h1>
+                    <p class="member-name-roman">SEI MEI</p>
+                    <ul>
+                        <li><a href=""><i class="fab fa-facebook sns-icon-color"></i></a></li>
+                        <li><a href=""><i class=" fa-brands fa-twitter sns-icon-color"></i></a></li>
+                    </ul>
+                    <h2>成し遂げたいこと</h2>
+                    <p class="achieve-txt">文章掲載文章掲載文章掲載文章掲載文章掲載文章掲載文章掲載</p>
+                </section><!-- /.profile-txt -->
+            </article><!-- /.profile -->
+            <article class="profile">
+                <section class="profile-ph">
+                    <img src="./assets/images/ph-kawashima.png" sizes="" alt="">
+                </section><!-- /.profile-ph -->
+                <section class="profile-txt">
+                    <h1>姓 名</h1>
+                    <p class="member-name-roman">SEI MEI</p>
+                    <ul>
+                        <li><a href=""><i class="fab fa-facebook sns-icon-color"></i></a></li>
+                        <li><a href=""><i class=" fa-brands fa-twitter sns-icon-color"></i></a></li>
+                    </ul>
+                    <h2>成し遂げたいこと</h2>
+                    <p class="achieve-txt">文章掲載文章掲載文章掲載文章掲載文章掲載文章掲載文章掲載</p>
+                </section><!-- /.profile-txt -->
+            </article><!-- /.profile -->
+            <article class="profile">
+                <section class="profile-ph">
+                    <img src="./assets/images/ph-kawada.png" sizes="" alt="">
+                </section><!-- /.profile-ph -->
+                <section class="profile-txt">
+                    <h1>姓 名</h1>
+                    <p class="member-name-roman">SEI MEI</p>
+                    <ul>
+                        <li><a href=""><i class="fab fa-facebook sns-icon-color"></i></a></li>
+                        <li><a href=""><i class=" fa-brands fa-twitter sns-icon-color"></i></a></li>
+                    </ul>
+                    <h2>成し遂げたいこと</h2>
+                    <p class="achieve-txt">文章掲載文章掲載文章掲載文章掲載文章掲載文章掲載文章掲載</p>
+                </section><!-- /.profile-txt -->
+            </article><!-- /.profile -->
+            <article class="profile">
+                <section class="profile-ph">
+                    <img src="./assets/images/ph-abe.png" sizes="" alt="">
+                </section><!-- /.profile-ph -->
+                <section class="profile-txt">
+                    <h1>姓 名</h1>
+                    <p class="member-name-roman">SEI MEI</p>
+                    <ul>
+                        <li><a href=""><i class="fab fa-facebook sns-icon-color"></i></a></li>
+                        <li><a href=""><i class=" fa-brands fa-twitter sns-icon-color"></i></a></li>
+                    </ul>
+                    <h2>成し遂げたいこと</h2>
+                    <p class="achieve-txt">文章掲載文章掲載文章掲載文章掲載文章掲載文章掲載文章掲載</p>
+                </section><!-- /.profile-txt -->
+            </article><!-- /.profile -->
+            <article class="profile">
+                <section class="profile-ph">
+                    <img src="./assets/images/ph-shimojyo.png" sizes="" alt="">
+                </section><!-- /.profile-ph -->
+                <section class="profile-txt">
+                    <h1>姓 名</h1>
+                    <p class="member-name-roman">SEI MEI</p>
+                    <ul>
+                        <li><a href=""><i class="fab fa-facebook sns-icon-color"></i></a></li>
+                        <li><a href=""><i class=" fa-brands fa-twitter sns-icon-color"></i></a></li>
+                    </ul>
+                    <h2>成し遂げたいこと</h2>
+                    <p class="achieve-txt">文章掲載文章掲載文章掲載文章掲載文章掲載文章掲載文章掲載</p>
+                </section><!-- /.profile-txt -->
+            </article><!-- /.profile -->
+            <article class="profile">
+                <section class="profile-ph">
+                    <img src="./assets/images/ph-oshima.png" sizes="" alt="">
+                </section><!-- /.profile-ph -->
+                <section class="profile-txt">
+                    <h1>姓 名</h1>
+                    <p class="member-name-roman">SEI MEI</p>
+                    <ul>
+                        <li><a href=""><i class="fab fa-facebook sns-icon-color"></i></a></li>
+                        <li><a href=""><i class=" fa-brands fa-twitter sns-icon-color"></i></a></li>
+                    </ul>
+                    <h2>成し遂げたいこと</h2>
+                    <p class="achieve-txt">文章掲載文章掲載文章掲載文章掲載文章掲載文章掲載文章掲載</p>
+                </section><!-- /.profile-txt -->
+            </article><!-- /.profile -->
+            <article class="profile">
+                <section class="profile-ph">
+                    <img src="./assets/images/ph-nakayasu.png" sizes="" alt="">
+                </section><!-- /.profile-ph -->
+                <section class="profile-txt">
+                    <h1>姓 名</h1>
+                    <p class="member-name-roman">SEI MEI</p>
+                    <ul>
+                        <li><a href=""><i class="fab fa-facebook sns-icon-color"></i></a></li>
+                        <li><a href=""><i class=" fa-brands fa-twitter sns-icon-color"></i></a></li>
+                    </ul>
+                    <h2>成し遂げたいこと</h2>
+                    <p class="achieve-txt">文章掲載文章掲載文章掲載文章掲載文章掲載文章掲載文章掲載</p>
+                </section><!-- /.profile-txt -->
+            </article><!-- /.profile -->
+            <article class="profile">
+                <section class="profile-ph">
+                    <img src="./assets/images/ph-tanaka.png" sizes="" alt="">
+                </section><!-- /.profile-ph -->
+                <section class="profile-txt">
+                    <h1>姓 名</h1>
+                    <p class="member-name-roman">SEI MEI</p>
+                    <ul>
+                        <li><a href=""><i class="fab fa-facebook sns-icon-color"></i></a></li>
+                        <li><a href=""><i class=" fa-brands fa-twitter sns-icon-color"></i></a></li>
+                    </ul>
+                    <h2>成し遂げたいこと</h2>
+                    <p class="achieve-txt">文章掲載文章掲載文章掲載文章掲載文章掲載文章掲載文章掲載</p>
+                </section><!-- /.profile-txt -->
+            </article><!-- /.profile -->
+            <article class="profile">
+                <section class="profile-ph">
+                    <img src="./assets/images/ph-kanamaru.png" sizes="" alt="">
+                </section><!-- /.profile-ph -->
+                <section class="profile-txt">
+                    <h1>姓 名</h1>
+                    <p class="member-name-roman">SEI MEI</p>
+                    <ul>
+                        <li><a href=""><i class="fab fa-facebook sns-icon-color"></i></a></li>
+                        <li><a href=""><i class=" fa-brands fa-twitter sns-icon-color"></i></a></li>
+                    </ul>
+                    <h2>成し遂げたいこと</h2>
+                    <p class="achieve-txt">文章掲載文章掲載文章掲載文章掲載文章掲載文章掲載文章掲載</p>
+                </section><!-- /.profile-txt -->
+            </article><!-- /.profile -->
+            <article class="profile">
+                <section class="profile-ph">
+                    <img src="./assets/images/ph-ito.png" sizes="" alt="">
+                </section><!-- /.profile-ph -->
+                <section class="profile-txt">
+                    <h1>姓 名</h1>
+                    <p class="member-name-roman">SEI MEI</p>
+                    <ul>
+                        <li><a href=""><i class="fab fa-facebook sns-icon-color"></i></a></li>
+                        <li><a href=""><i class=" fa-brands fa-twitter sns-icon-color"></i></a></li>
+                    </ul>
+                    <h2>成し遂げたいこと</h2>
+                    <p class="achieve-txt">文章掲載文章掲載文章掲載文章掲載文章掲載文章掲載文章掲載</p>
+                </section><!-- /.profile-txt -->
+            </article><!-- /.profile -->
+            <article class="profile">
+                <section class="profile-ph">
+                    <img src="./assets/images/ph-kouno.png" sizes="" alt="">
+                </section><!-- /.profile-ph -->
+                <section class="profile-txt">
+                    <h1>姓 名</h1>
+                    <p class="member-name-roman">SEI MEI</p>
+                    <ul>
+                        <li><a href=""><i class="fab fa-facebook sns-icon-color"></i></a></li>
+                        <li><a href=""><i class=" fa-brands fa-twitter sns-icon-color"></i></a></li>
+                    </ul>
+                    <h2>成し遂げたいこと</h2>
+                    <p class="achieve-txt">文章掲載文章掲載文章掲載文章掲載文章掲載文章掲載文章掲載</p>
+                </section><!-- /.profile-txt -->
+            </article><!-- /.profile -->
+        </div><!-- /#all-member -->
+
+        <div class="message-btn">
+            <a href="/contact.html">メンバーにメッセージを送る</a>
+        </div>
+        <!-- /.message -->
+
+
+    </main>
+    <footer>
+        <p>© 2023 masateru tagawwa.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="./assets/js/particles.js"></script>
+</body>
+
+</html>

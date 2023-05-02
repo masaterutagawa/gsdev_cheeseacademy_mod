@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/import.css">
+    <link rel="apple-touch-icon" href="images/meta/apple-touch-icon.png">
+    <!-- Start googlefont -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400;500;700&family=Open+Sans&family=Oswald:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- End googlefont -->
+    <meta property="og:site_name" content="FUKUOKA DEV13 MEMBER" />
+    <meta property="og:url" content="URL" />
+    <meta property="og:type" content="website or article" />
+    <meta property="og:title" content="ページのタイトル" />
+    <meta property="og:description" content="ページの説明" />
+    <meta property="og:image" content="URL" />
+    <meta property="og:locale" content="ja_JP" />
+    <meta property="fb:app_id" content="AppID">
+    <meta name="twitter:card" content="summary_large_image or summary" />
+    <meta name="twitter:site" content="@twitter_id" />
+    <meta name="twitter:description" content="ページの説明" />
+    <meta name="twitter:image:src" content="URL" />
+    <script src="https://kit.fontawesome.com/39e5143346.js" crossorigin="anonymous"></script>
+    <title>FUKUOKA DEV13 MEMBERへのメッセージ</title>
+</head>
+
+<body>
+    <div id="particles-js"></div>
+    <header>
+        <div class="header-item">
+            <p class=" site-id"><a href="/"><img src="./assets/images/logo.png" alt=""></a></p>
+            <h1>FUKUOKA DEV13 MEMBER</h1>
+            <p class="cacthcopy">メンバーへのメッセージはこちらからどうぞ。</p>
+        </div><!-- /.header-item -->
+        <!-- ハンバーガーメニュー部分 -->
+        <div class="drawer">
+            <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
+            <input type="checkbox" id="drawer-check" class="drawer-hidden">
+            <!-- ハンバーガーアイコン -->
+            <label for="drawer-check" class="drawer-open"><span></span></label>
+            <!-- メニュー -->
+            <nav class="drawer-content">
+                <ul class="drawer-list">
+                    <li class="drawer-item">
+                        <a href="/contact.html">メンバーにメッセージを送る</a>
+                    </li><!-- /.drawer-item -->
+                    <li class="drawer-item">
+                        <a href="https://gsacademy.jp/" target="_blank">G’s ACADEMY</a>
+                    </li><!-- /.drawer-item -->
+                </ul><!-- /.drawer-list -->
+            </nav>
+        </div><!--/.drawer -->
+    </header>
+    <main>
+        <section id="contact">
+            <form method=" get" id="comment_form" name="comment_form" action="./">
+                <dl>
+                    <dt><label for="name">お名前</label></dt>
+                    <dd><input type="text" id="name" name="name" size="32rem" class="formnyuuryoku" /></dd>
+                    <dt>メールアドレス</dt>
+                    <dd><input type="email" name="email" id="email" class="formnyuuryoku" size="32rem"></dd>
+                    <dt><label for="color">件名</label></dt>
+                    <dd>
+                        <select id="color" name="color">
+                            <option disabled selected>選択して下さい</option>
+                            <option value="お金あげます">お金あげます</option>
+                            <option value="資金を提供します">資金を提供します</option>
+                            <option value="買収します">買収します</option>
+                        </select>
+                    </dd>
+                    <dt><label for="comment">コメントメッセージ</label></dt>
+                    <dd><textarea id="comment" name="comment" cols="35rem" rows="5rem" class="formnyuuryoku"></textarea>
+                    </dd>
+                </dl>
+                <div class="btn-submit"><input type="submit" value="メッセージを送信する" class="btn-submit-d" /></div>
+            </form>
+        </section><!-- /#contact -->
+
+
+    </main>
+    <footer>
+        <p>© 2023 masateru tagawwa.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="./assets/js/particles.js"></script>
+</body>
+
+</html>
